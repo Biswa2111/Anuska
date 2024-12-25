@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: url('https://i.ibb.co/QrLNc1M/Screenshot-20241225-090050.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .intro {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.5);
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            z-index: 3;
+            animation: fadeOut 3s forwards;
+        }
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            90% { opacity: 0.1; }
+            100% { opacity: 0; visibility: hidden; }
+        }
+        .container {
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+        h1 {
+            font-size: 4rem;
+            margin-top: 50px;
+            animation: fadeIn 2s ease-in-out;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+        p {
+            font-size: 1.8rem;
+            margin: 20px 0;
+            animation: slideIn 2s ease-in-out;
+            font-style: italic;
+        }
+        footer {
+            font-size: 1.2rem;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+        .balloon {
+            position: absolute;
+            font-size: 3rem;
+            animation: floatUp 10s infinite ease-in-out;
+        }
+        .balloon:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .balloon:nth-child(2) { left: 30%; animation-delay: 2s; }
+        .balloon:nth-child(3) { left: 50%; animation-delay: 4s; }
+        .balloon:nth-child(4) { left: 70%; animation-delay: 6s; }
+        .balloon:nth-child(5) { left: 90%; animation-delay: 8s; }
+        @keyframes floatUp {
+            0% { bottom: -100px; transform: translateX(0); }
+            50% { transform: translateX(20px); }
+            100% { bottom: 100%; transform: translateX(-20px); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="intro">
+        ✨ A Special Day for My Princess! ✨
+    </div>
+    <div class="container">
+        <h1>Happy Birthday to My Beautiful Daughter!</h1>
+        <p>
+            My sweet girl, you are my greatest gift, my shining star, and the joy of my life. 
+            Watching you grow fills my heart with pride. I hope your birthday is as magical as you are!
+        </p>
+        <footer>With endless love, Dad</footer>
+    </div>
+    <div class="background">
+        <div class="balloon" style="bottom: -100px;">🎈</div>
+        <div class="balloon" style="bottom: -200px;">🎈</div>
+        <div class="balloon" style="bottom: -300px;">🎈</div>
+        <div class="balloon" style="bottom: -400px;">🎈</div>
+        <div class="balloon" style="bottom: -500px;">🎈</div>
+    </div>
+</body>
+</html>
